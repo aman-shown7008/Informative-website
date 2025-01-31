@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+header .logo,
+.footer-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+main h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.thin-text {
+  font-weight: 400 !important;
+}
+
+footer .footer-contact p {
+  margin: 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+.wrappermain {
+  background-color: #f4f4f4;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .wrappermain main{
+  width: 50%;
+} */
+
+#enquiryForm input {
+  border-radius: 100px;
+}
+#enquiryForm .button-container button {
+  width: 40%;
+  border-radius: 50px;
+  padding: 10px 0;
+  background-color: #800080;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.container .foot a,p{
+  font-weight: 400;
+}
+
+.img-fluid1{
+  height: 500px;
+}
+
+.enqi-span{
+  /* white-space: nowrap; */
+  color: #800080;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  /* padding-right: 50px; */
+  gap: 20px!important;
+}
+
+.form-label{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+form {
+  padding: 4% 3%;
+  border-radius: 11.3px;
+  background-color: white;
+  border: 2px solid #800080;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .enqi-wrap{
+    white-space:normal!important;
+  }
+  .inqu-form{
+    width: 100%;
+  }
+  .enqi-span{
+    white-space: normal;
+  }
+  form{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inqu-form{
+    width: 100%;
+  }
+
+  .container {
+    width: 100%!important;
+  }
+
+  .enqi-wrap{
+    white-space:normal!important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* .inqu-form{
+    width: 80%;
+  } */
+}
+
+@media screen and (max-width: 350px) {
+  .inqu-form{
+    width: 100%;
+  }
+  .btn-dark{
+    width: 100%!important;
+  }
+  .enqi-wrap{
+    width: 100%;
+  }
+}

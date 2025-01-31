@@ -1,0 +1,169 @@
+.box {
+  display: grid;
+}
+.box > * {
+  margin: auto;
+}
+/* .box-1 {
+  background-color: #f4f4f4;
+} */
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.thin-text {
+  font-weight: 400 !important;
+}
+.faq-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f0f0f0;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+
+.answer {
+  display: none;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+}
+
+.answer p {
+  margin: 0;
+}
+
+.reach-us-sec1 {
+  /* background-color: #f4f4f4; */
+  margin: 20px 0 50px;
+}
+
+.foot {
+  margin: 20px 0;
+}
+
+.nav1{
+  flex-wrap: wrap;
+}
+
+.contact-button:hover{
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .faq-item {
+    padding: 15px;
+  }
+
+  .reach-us-sec {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .reach-us-sec img {
+    width: 100%;
+  }
+
+  .cnumbers span {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box-1 h1,
+  .box-2 h1,
+  .reach-us-sec1 h1 {
+    font-size: 1.5em;
+  }
+
+  .reach-us-sec1 {
+    margin: 10px 0 30px;
+  }
+
+  .reach-us-sec img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cnumbers {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cnumbers span {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .box-1 h1,
+  .box-2 h1,
+  .reach-us-sec1 h1 {
+    font-size: 1.2em;
+  }
+
+  .reach-us-sec1 {
+    padding: 5px;
+    margin: 5px 0 20px;
+  }
+
+  .reach-us-sec {
+    padding: 0;
+  }
+
+  .cnumbers {
+    padding: 0 5px;
+    margin-top: 0;
+  }
+
+  .cnumbers span h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .box-1 h1,
+  .box-2 h1,
+  .reach-us-sec1 h1 {
+    font-size: 1em;
+  }
+
+  .reach-us-sec1 {
+    padding: 0;
+  }
+
+  .reach-us-sec img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cnumbers {
+    padding: 0 2px;
+  }
+
+  .cnumbers span h3 {
+    font-size: 1.2em;
+  }
+}
