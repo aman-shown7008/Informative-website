@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Csonka Worldwide</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background: var(--text-white);
+        padding: 1.2% 0;
+        color: var(--text-black);
+      }
+      header > a {
+        text-decoration: none;
+        color: var(--text-black);
+        padding: 1% 2%;
+      }
+      header > a:not(#icon):hover {
+        border-radius: 2px;
+        background-color: rgb(0, 0, 0);
+        color: #ffff;
+      }
+      .bottom-line {
+        text-align: center;
+        position: relative;
+      }
+
+      .bottom-line::after {
+        content: "";
+        display: block;
+        width: 500px; 
+        border-bottom: 1px solid black;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        margin-top: 40px;
+      }
+      .header-card-para {
+        width: 80% !important;
+        margin-top: 25px !important;
+      }
+      .hero-section {
+        background-image: url("../products-pages/assets/bg-hero.png");
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: white;
+      }
+      .products-section .card,
+      .more-products-section .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .cta-section {
+        background-color: #333;
+        color: white;
+      }
+      .footer-section {
+        background-color: #f8f9fa;
+      }
+      .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .footer-section ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+      .gif-cont {
+        background-image: url(assets/gif-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+      }
+      /* for last bannere befor footer */
+      .wrapercontact {
+        background-color: #f4f4f4;
+      }
+      .reach-us-sec > div > a > button {
+        background: #000;
+        color: #ffffff;
+        border-radius: 11.12px;
+        padding: 1% 2%;
+      }
+
+      footer > div > *,
+      footer > a,
+      footer > div > *,
+      footer > p {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      .footstrip {
+        background: #000;
+        padding: 20px 0 10px;
+      }
+      .foot {
+        margin: 20px;
+      }
+      @media screen and (max-width: 992px) {
+        .gif-cont{
+          display: flex;
+          flex-direction: column;
+          background-image: none;
+        }
+        .gif-cont img{
+          background-image: url(assets/gif-bg.png);
+          background-size: cover;
+          background-position: center;
+        }
+        .text-end{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+        }
+        .text-end p,h2{
+          text-align: center;
+        }
+        .more-prod{
+          display: flex;
+          flex-direction: column;
+        }
+        .bottom-line::after{
+          content: none;
+        }
+        .reach-us-sec {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        .reach-us-sec img {
+          width: 100%;
+          float: left;
+        }
+        .cnumbers {
+          display: flex;
+          justify-content: baseline;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        footer,
+        .footstrip {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .form-row {
+          flex-direction: column;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .mission-cont img {
+          width: 100%;
+        }
+        .cnumbers {
+          margin-top: -50px;
+        }
+      }
+
+      @media screen and (max-width: 350px) {
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="d-flex justify-content-between container nav">
+      <a id="icon" href="../index.html"
+        ><img src="../assets/images/csonka worldwide.png" alt="" width="80%"
+      /></a>
+      <a id="home-link" href="../index.html">Home</a>
+      <a id="products-link" href="../pages/products.html">Products</a>
+      <a id="testimonials-link" href="../pages/testimonials.html"
+        >Testimonials</a
+      >
+      <a id="gallery-link" href="../pages/gallery.html">Gallery</a>
+      <a id="enquiry-link" href="inquery.html">Enquiry</a>
+      <a id="faq-link" href="../pages/f&q.html">FAQ</a>
+      <a id="about-link" href="../pages/AboutUs.html">About</a>
+      <a id="contact-link" href="../pages/contact.html">Contact Us</a>
+    </header>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+      <div class="container d-grid">
+        <h1 class="m-auto">Golf Market</h1>
+        <p class="m-auto header-card-para">
+          We provide Golf Market your unique style. From personalized clothing
+          to one-of-a-kind accessories, bring your vision to life with our
+          high-quality, tailored options
+        </p>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <h1 class="text-center mt-4 bottom-line">PRODUCTS</h1>
+    <section class="products-section py-5">
+      <div class="container">
+        <h6>Whats new?</h6>
+        <h2 class="mb-4">
+          Take A Look At Our Cigar Product & Smoker Accessories
+        </h2>
+        <div class="row">
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 2-1.png"
+                class="card-img-top"
+                alt="Vintage Smoke Cords"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vintage Smoke Cords</h5>
+                <p class="card-text">$45</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 2.png"
+                class="card-img-top"
+                alt="Elegant Cigar Cutter"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Elegant Cigar Cutter</h5>
+                <p class="card-text">$55</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 3.png"
+                class="card-img-top"
+                alt="Action Cigar Holder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Action Cigar Holder</h5>
+                <p class="card-text">$60</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 4.png"
+                class="card-img-top"
+                alt="Action Cigar Holder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Action Cigar Holder</h5>
+                <p class="card-text">$60</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more products as needed -->
+        </div>
+        <!-- new row -->
+        <div class="row">
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 5.png"
+                class="card-img-top"
+                alt="Vintage Smoke Cords"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Vintage Smoke Cords</h5>
+                <p class="card-text">$45</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 6.png"
+                class="card-img-top"
+                alt="Elegant Cigar Cutter"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Elegant Cigar Cutter</h5>
+                <p class="card-text">$55</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 7.png"
+                class="card-img-top"
+                alt="Action Cigar Holder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Action Cigar Holder</h5>
+                <p class="card-text">$60</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <img
+                src="Golf/image 8.png"
+                class="card-img-top"
+                alt="Action Cigar Holder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Action Cigar Holder</h5>
+                <p class="card-text">$60</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more products as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="d-flex text-center py-4 gif-cont container">
+      <img src="./assets/gif.png" alt="" />
+      <div class="container text-end p-5">
+        <h2>Your One-Stop Shop For All Gifts</h2>
+        <h1>for all gifts</h1>
+        <p class="">
+          Discover a wide array of gifts for every occasion and recipient all in
+          one place, making your gift-giving experience effortless and enjoyable
+        </p>
+        <span class="d-flex justify-content-end">
+          <a href="#" class="btn btn-light me-4">Home</a>
+          <a href="#" class="btn btn-dark">Explore Now</a>
+        </span>
+      </div>
+    </section>
+
+    <!-- More Products Section -->
+    <section class="more-products-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Explore More Products</h2>
+        <div class="row align-items-center">
+          <img src="./assets/more prod.png" alt="" class="col" />
+          <div class="col d-flex more-prod">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../products-pages/Golf/image 2-1.png"
+                  class="card-img-top"
+                  alt="LuxCigar Humidor"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">LuxCigar Humidor</h5>
+                  <p class="card-text">$110</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../products-pages/Golf/image 2.png"
+                  class="card-img-top"
+                  alt="Vintage Smoke Cords"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vintage Smoke Cords</h5>
+                  <p class="card-text">$45</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../products-pages/Golf/image 3.png"
+                  class="card-img-top"
+                  alt="Elegant Cigar Cutter"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Elegant Cigar Cutter</h5>
+                  <p class="card-text">$55</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="../products-pages/Golf/image 4.png"
+                  class="card-img-top"
+                  alt="Action Cigar Holder"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Action Cigar Holder</h5>
+                  <p class="card-text">$60</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more products as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="wrapercontact">
+      <div class="container">
+        <div class="reach-us-sec d-flex justify-content-around py-4">
+          <div class="py-4 pe-5">
+            <h1 class="pt-2">REACH US OUT</h1>
+            <p class="pt-2">
+              Csonka offers a diverse range of products, from cigars and smoking
+              kits to golf accessories and customized apparel. Our unique
+              electron beam irradiation facility and in-house polymer
+              compounding unit ensure top quality and fast delivery. With
+              manufacturing in Hyderabad and a marketing network spanning major
+              Indian cities and the Middle East, we provide exceptional service
+              and products tailored to your needs. Explore our online platform
+              today for unique gifts and personalized items.
+            </p>
+            <a href="..//pages/contact.html"
+              ><button class="pt-2">
+                Contact Form<svg
+                  class="ps-2"
+                  width="26"
+                  height="8"
+                  viewBox="0 0 26 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.921997 6.98045H23.1524L16.6282 1.42285"
+                    stroke="white"
+                    stroke-width="1.58789"
+                  />
+                </svg></button
+            ></a>
+          </div>
+          <img src="../assets/images/reachus-sec.png" width="400px" alt="" />
+        </div>
+
+        <div class="cnumbers d-flex justify-content-around py-5">
+          <span>
+            <h6>Get a Quote.</h6>
+            <h2>Contact Us</h2>
+          </span>
+          <span>
+            <h6>Give us a Call.</h6>
+            <span class="d-flex justify-content-between align-items-end">
+              <h2>800-276-6522</h2>
+              <p>(Toll Free)</p>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="d-flex justify-content-between mx-4 pt-4 foot">
+        <img src="../assets/images/footer.png" alt="" height="100px" />
+        <div>
+          <a href="">About</a><br />
+          <a href="">Product</a><br />
+          <a href="">FAQ</a><br />
+          <a href="">Enquiry</a>
+        </div>
+        <div>
+          <a href="">Gallery</a><br />
+          <a href="">Testimonials</a><br />
+          <a href="">Contact</a>
+        </div>
+        <p>
+          Lorem Ipsum city <br />
+          New York, USA <br />
+          201089
+        </p>
+        <a href="">800-276-6522</a>
+      </footer>
+    </div>
+
+    <section class="footstrip d-flex justify-content-around align-items-center">
+      <p class="text-white">csonka worldwide</p>
+      <p class="text-white">
+        © Copyright csonka worldwide All rights reserved.
+      </p>
+      <p class="text-white">1996-2024</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
